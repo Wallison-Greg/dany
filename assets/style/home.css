@@ -1,0 +1,629 @@
+@import url('../style/anima.css');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--mont);
+}
+:root{
+
+    --cor1: #FFCC29;
+    --cor2: #24b65f;
+    --cor3: #eec02a;
+    --cor4: #AB0000;
+    --cor5: #3f97fb;
+    --cor6: #202020;
+
+    --mont: 'Montserrat', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    background-color: black;
+    color: white;
+}
+.container{
+    display: flex;
+    max-width: 990px;
+}
+
+header .container{
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+}
+.logo img{
+    width: 200px;
+    height: 80px;
+}
+.menu {
+    display: flex;
+    align-items: center;
+}
+.menu .menu_open{
+    display: none;
+}
+nav ul, 
+nav li{
+    list-style: none; 
+    margin: 0px;
+    margin-right: 5px;
+    padding: 0px;
+    font-size: 14px;
+    font-weight: 600;
+}
+nav ul{
+    display: flex;
+}
+nav a{
+    height: 100px;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    color: white;
+    border-bottom: 3px solid black;
+}
+nav a:hover{
+    border-bottom: 3px solid var(--cor1);
+    color: var(--cor3);
+    transition-duration: .5s;
+}
+
+/*banner*/
+
+.banner{
+    height: calc(100vh - 100px); 
+    background-image: url('../img/padaria.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+
+    animation-name: banner;
+    animation-iteration-count: infinite;
+    animation-duration: 4s, 4s, 4s, 4s;
+    animation-duration: 16s;
+}
+.banner .slide{
+    width: 100vw;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .slide_area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.banner h1{
+    text-transform: uppercase;
+    color: white;
+    font-weight:bold;
+    font-size: 40px;
+}
+.banner h2{
+    margin-top: 20px;
+    text-transform: uppercase;
+    color: var(--cor3);
+    font-weight:bold;
+    font-size: 35px;
+}
+.banner h1,
+.banner h2{
+    text-shadow: 0px 2px 2px black;
+}
+
+/*seção variedades*/
+.variedades{
+    display: flex;
+    justify-content: center;
+}
+.variedades .photo_area{
+    width: 350px;
+    height: 250px;
+}
+.widget-title{
+    margin: 30px 0px 20px 0px;
+}
+.widget-title-text{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+.widget-title-bar{
+    width: 60px;
+    height: 2px;
+    background-color: var(--cor3);
+}
+.variedades .container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.variedades .variedade_photos{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+.variedades .photo_area{
+    margin-right: 15px;
+}
+.photo_area img{
+    width: inherit;
+    height: inherit;
+    border-radius: 5px;
+}
+.photo_area .photo_inf{
+    border-radius: 5px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.404);
+    width: inherit;
+    height: inherit;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    text-shadow: 0px 2px 4px black;
+}
+.photo_inf h5{
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.photo_inf p{
+    font-size: 12px;
+    color: white;
+    max-width: 230px;
+}
+.photo_area:hover .photo_inf{
+    display:flex;
+}
+.variedade_photos .variedades_area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.variedades_area h2{
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/*banner frutas e verduras*/
+.frutas_verduras{
+    height: 400px;
+    margin-top: 30px;
+    background-image: url('../img/bolacha/micos-capa.jpg');
+    animation-name: hortifruti;
+}
+.frutas_verduras h1{
+    max-width: 600px;
+    text-align: center;
+}
+.frutas_verduras h2{
+    color: var(--cor2);
+}
+
+/*catalogo hortifruti*/
+.hortifruti{
+    display: flex;
+    justify-content: center;
+}
+.hortifruti .widget-title-bar{
+    background-color: var(--cor2);
+}
+.hortifruti .catalogo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.catalogo .variedade_photos{
+    display: flex;
+}
+.hortifruti .container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hortifruti .photo_area{
+    width: 200px;
+    height: 200px;
+}
+.hortifruti .variedades_area{
+    margin:0px 15px 15px 0px;
+}
+.hortifruti .photo_inf p{
+    text-transform: uppercase;
+}
+.btn{
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: var(--cor2);
+    font-size: 13px;
+    color: white;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 16px;
+}
+.btn:hover{
+    background-color: #138f45;
+}
+
+/*banner açougue*/
+
+.bn_açougue {
+    height: 400px;
+    margin-top: 30px;
+    background-image: url('../img/pereciveis/banner-perecivel.jpg');
+    animation-name: açougue;
+}
+.bn_açougue h1{
+    max-width: 720px;
+    font-size: 35px;
+    text-align: center;
+}
+.bn_açougue h2{
+    font-size: 30px;
+    color: var(--cor1);
+}
+
+/*seção açougue*/
+
+.açougue .widget-title-bar{
+    background-color: var(--cor1);
+}
+.açougue .btn{
+    background-color: var(--cor1);
+}
+.açougue .btn:hover {
+    background-color: var(--cor3);
+}
+
+/*banner padaria*/
+
+.bn_padaria{
+    background-image: url('../img/higiene/higiene.jpeg');
+    animation-name: padaria;
+}
+.bn_padaria h1{
+    max-width: 800px;
+    font-size: 33px;
+}
+.bn_padaria h2{
+    color: var(--cor4);
+}
+
+/*seção padaria*/
+
+.padaria .widget-title-bar{
+    background-color: var(--cor4);
+}
+.padaria .btn{
+    background-color: var(--cor4);
+    margin: 15px 0px;
+}
+.padaria .btn:hover{
+    background-color: #9b0606;
+}
+
+/*banner bebidas*/
+
+.bn_bebidas{
+    background-image: url('../img/higiene/higiene.jpeg');
+    animation-name: padaria;
+}
+.bn_bebidas h1{
+    max-width: 800px;
+    font-size: 33px;
+}
+.bn_bebidas h2{
+    color: var(--cor5);
+}
+
+/*seção bebidas*/
+
+.bebidas .widget-title-bar{
+    background-color: var(--cor5);
+}
+.bebidas .btn{
+    background-color: var(--cor5);
+    margin: 15px 0px;
+}
+.bebidas .btn:hover{
+    background-color: #3488e9;
+}
+
+/*seção map*/
+.map{
+    margin-top: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+.map .area_map{
+    width: 100vw;
+    height: 400px;
+    background-image: url('../img/maps.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*seção rodape*/
+footer{
+    background-color: var(--cor6);
+    display: flex;
+    justify-content: center;
+}
+footer .container{
+    flex-direction: column;
+}
+footer .inf_contact{
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    flex: 1;
+    border-bottom: 1px solid #7c7c7c;
+}
+.inf_contact .widget-title-text{
+    color: #ADADAD;
+}
+.inf_contact .widget-title-bar{
+    background-color: var(--cor3);
+}
+.inf_contact .contato,
+.inf_contact .endereco,
+.inf_contact .atendimento{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    margin-right: 10px;
+}
+.contato .inf_text,
+.endereco .inf_text,
+.atendimento .inf_text{
+    max-width: 300px;
+    padding-right: 20px;
+    text-align: justify;
+    font-size: 13px;
+    color: #ADADAD;
+    margin: 5px 0px 20px 0px;
+}
+.area_cont{
+    min-width: 300px;
+}
+.area_cont .desc_cont{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.area_cont .icon_cont{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #7c7c7c;
+}
+.area_cont .cont{
+    font-size: 14px;
+}
+.area_cont .cont a{
+    display: inline-flex;
+    text-decoration: none;
+    color: #ADADAD;
+}
+.endereco .desc_endereco,
+.atendimento .horario{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    min-width: 300px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #ADADAD;
+}
+.desc_endereco a{
+    text-decoration: none;
+    color: #ADADAD;
+}
+.desc_endereco .rua,
+.desc_endereco .bairro,
+.desc_endereco .cidade{
+    margin-bottom: 5px;
+}
+.atendimento .horario{
+    text-transform: capitalize;
+}
+.horario .day_sem{
+    display: flex;
+    margin-top: 15px;
+}
+.day_sem .day{
+    min-width: 33.5px;
+    margin-left: 10px;
+}
+.day_sem .hr{
+    padding-right: 15px;
+}
+.container .copy{
+    height: 40px;
+    color: #ADADAD;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.copy a{
+    text-decoration: none;
+    color: #ADADAD;
+}
+.copy a:hover{
+    color: var(--cor3);
+}
+.atendimento .horario{
+    flex-direction: row;
+}
+.horario .cont_day{
+    border-right: 1px solid #7c7c7c;
+    margin-right: 5px;
+    margin-bottom: 15px;
+}
+.horario .cont_day:last-child{
+    border-right: none;
+}
+.cont_day .day_sem:first-child{
+    margin-top: 0;
+}
+
+/*responsividade para tablets*/
+
+@media (max-width: 768px){
+
+    /*seção banner*/
+
+    .banner h1{
+        font-size: 35px;
+    }
+    .banner h2{
+        font-size: 30px;
+    }
+
+    /*seção variedades*/
+
+    .variedades .photo_area{
+        width: 232px;
+        height: 170px;
+        margin-right: 10px;
+    }
+    .photo_inf h5,
+    .variedades_area h2{
+        font-size: 16px;
+    }
+    .photo_inf p{
+        font-size: 11px;
+        padding: 0px 5px;
+    }
+
+    /*rodapé*/
+
+    footer .inf_contact{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container .copy{
+        width: 100vw;
+    }
+}
+
+/*responsividade para celulares*/
+
+@media (max-width: 468px){
+
+    /*menu*/
+     
+    .menu .menu_open{
+        display: flex;
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+        margin-left: 50vw;
+    }
+    nav ul:first-child{
+        margin-top: 50px;
+    }
+    nav ul{
+        display: none;
+        flex-direction: column;
+        width: 50vw;
+        position: absolute;
+        z-index: 99;
+        right: 0px;
+        background-color: rgba(0, 0, 0, 0.87);
+        height: calc(100vh - 100px);
+        margin-right: 0px;
+    }
+    nav a{
+        border-bottom: none;
+        height: auto;
+        font-weight: bold;
+        font-size: 16px;
+        margin: 4.8px 0px 4.8px 40px;
+    }
+    nav a:hover{
+        border-bottom: none;
+        color: var(--cor1);
+    }
+
+    /*banner*/
+
+    .banner h1{
+        font-size: 30px;
+        max-width: 375px;
+        text-align: center;
+    }
+    .banner h2{
+        font-size: 25px;
+    }
+
+    /*variedades*/
+
+    .variedades .variedade_photos{
+        flex-direction: column;
+    }
+    .variedade_photos .variedades_area{
+        margin-bottom: 15px;
+    }
+    .variedades .widget-title{
+        margin-bottom: 10px;
+    }
+
+    /*banner 2*/
+
+    .frutas_verduras{
+        margin-top: 0px;
+    }
+
+    /*hortifruti*/
+
+    .catalogo .variedade_photos{
+        flex-direction: column;
+    }
+    .hortifruti .variedades_area{
+        margin: 0px 10px 10px 0px;
+    }
+    .hortifruti .catalogo{
+        flex-direction: row;
+    }
+    .hortifruti .photo_area{
+        width: 150px;
+        height: 150px;
+    }
+}

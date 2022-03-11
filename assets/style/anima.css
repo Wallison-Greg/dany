@@ -1,0 +1,60 @@
+@keyframes banner{
+    25%{
+        background-image: url('../img/padaria.jpg');
+    }
+    50%{
+        background-image: url('../img/verduras.jpg');
+    }
+    75%{
+        background-image: url('../img/frutas.jpg');
+    }
+    100%{
+        background-image: url('../img/açougue.jpg');
+    }
+
+}
+
+@keyframes hortifruti{
+    25%{
+        background-image: url('../img/bolacha/bono-capa.jpg');
+    }
+    50%{
+        background-image: url('../img/bolacha/capa-passatempo.jpg');
+    }
+    75%{
+        background-image: url('../img/bolacha/micos-capa.jpg');
+    }
+    100%{
+        background-image: url('../img/bolacha/capa-rancheiro.jpg');
+    }
+}
+
+@keyframes açougue{
+    25%{
+        background-image: url('../img/pereciveis/banner-arroz.jpg');
+    }
+    50%{
+        background-image: url('../img/pereciveis/nao-perecivel.jpg');
+    }
+    75%{
+        background-image: url('../img/pereciveis/banner-perecivel.jpg');
+    }
+    100%{
+        background-image: url('../img/pereciveis/banner-arroz.jpg');
+    }
+}
+
+@keyframes padaria{
+    25%{
+        background-image: url('../img/higiene/omo-capa.jpg');
+    }
+    50%{
+        background-image: url('../img/higiene/QBOA.jpg');
+    }
+    75%{
+        background-image: url('../img/higiene/higiene.jpeg');
+    }
+    100%{
+        background-image: url('../img/higiene/Personal_Comfort_Decor_b.jpg');
+    }
+}
