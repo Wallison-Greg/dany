@@ -214,7 +214,7 @@ nav a:hover{
 .frutas_verduras{
     height: 400px;
     margin-top: 30px;
-    background-image: url('../img/bolacha/micos-capa.jpg');
+    background-image: url('../img/verduras.jpg');
     animation-name: hortifruti;
 }
 .frutas_verduras h1{

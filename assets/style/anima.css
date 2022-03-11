@@ -16,16 +16,16 @@
 
 @keyframes hortifruti{
     25%{
-        background-image: url('../img/bolacha/bono-capa.jpg');
+        background-image: url('../img/frutas.jpg');
     }
     50%{
-        background-image: url('../img/bolacha/capa-passatempo.jpg');
+        background-image: url('../img/img_mercado/frutas1.jpg');
     }
     75%{
-        background-image: url('../img/bolacha/micos-capa.jpg');
+        background-image: url('../img/img_mercado/verduras3.jpg');
     }
     100%{
-        background-image: url('../img/bolacha/capa-rancheiro.jpg');
+        background-image: url('../img/img_mercado/verduras2.jpg');
     }
 }
 
