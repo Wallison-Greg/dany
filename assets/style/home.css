@@ -557,10 +557,10 @@ footer .inf_contact{
      
     .menu .menu_open{
         display: flex;
-        width: 25px;
-        height: 25px;
+        width: 30px;
+        height: 30px;
         cursor: pointer;
-        margin-left: 50vw;
+        margin-left: 18vw;
     }
     nav ul:first-child{
         margin-top: 50px;
