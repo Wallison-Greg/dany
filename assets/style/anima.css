@@ -1,15 +1,15 @@
 @keyframes banner{
     25%{
-        background-image: url('../img/padaria.jpg');
+        background-image: url('../img/dn_frutas.png');
     }
     50%{
-        background-image: url('../img/verduras.jpg');
+        background-image: url('../img/dn_açougue.png');
     }
     75%{
-        background-image: url('../img/frutas.jpg');
+        background-image: url('../img/dn_mercearia.png');
     }
     100%{
-        background-image: url('../img/açougue.jpg');
+        background-image: url('../img/dn_capa.png');
     }
 
 }
@@ -40,21 +40,36 @@
         background-image: url('../img/pereciveis/banner-perecivel.jpg');
     }
     100%{
-        background-image: url('../img/pereciveis/banner-arroz.jpg');
+        background-image: url('../img/pereciveis/cp-oleo.jpg');
+    }
+}
+
+@keyframes bebidas{
+    25%{
+        background-image: url('../img/bebidas/pratileira_alcool.png');
+    }
+    50%{
+        background-image: url('../img/bebidas/pratileira_refri.png');
+    }
+    75%{
+        background-image: url('../img/bebidas/dn_cerveja.png');
+    }
+    100%{
+        background-image: url('../img/bebidas/suco.jpg');
     }
 }
 
 @keyframes padaria{
     25%{
-        background-image: url('../img/higiene/omo-capa.jpg');
+        background-image: url('../img/dn_açougue.png');
     }
     50%{
-        background-image: url('../img/higiene/QBOA.jpg');
+        background-image: url('../img/img_mercado/almondegas.jpg');
     }
     75%{
-        background-image: url('../img/higiene/higiene.jpeg');
+        background-image: url('../img/img_mercado/frango.jpg');
     }
     100%{
-        background-image: url('../img/higiene/Personal_Comfort_Decor_b.jpg');
+        background-image: url('../img/img_mercado/linguiça.jpg');
     }
 }
