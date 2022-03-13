@@ -70,7 +70,7 @@ main{
 }
 .att_title{
     font-family: 'Great Vibes', cursive;
-    color: #24b65f;
+    color: #eec02a;
     font-weight: 400;
     font-size: 50px;
     padding: 50px 0px;
@@ -132,6 +132,9 @@ main{
         max-width: 380px;
         font-size: 14px;
     }
+    .att_cont_desc q{
+        word-wrap: break-word;
+    }
 }
 
 /*responsividade mobile*/
@@ -141,7 +144,7 @@ main{
         flex-direction: column;
     }
     .body .container{
-        min-width: 369px;
+        min-width: 345px;
     }
     .container .area_products{
         flex-direction: column;
@@ -150,5 +153,9 @@ main{
     .area_products .product{
         min-width: 250px;
         max-width: 275px;
+    }
+    .container .att_cont {
+        min-width: 340px;
+        padding: 0px 10px;
     }
 }
