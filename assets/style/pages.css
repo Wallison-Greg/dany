@@ -36,6 +36,15 @@ main{
     height: auto;
     margin: 10px;
 }
+/*inicio do teste*/
+.pric_prod {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 15px 0px;
+    color: #FFCC29;
+}
+/*final*/
 .product .desc_prod{
     display: none;
     font-size: 13px;

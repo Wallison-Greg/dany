@@ -510,7 +510,14 @@ footer .inf_contact{
 /*responsividade para tablets*/
 
 @media (max-width: 768px){
-
+    /*menu*/
+    nav ul,
+    nav li{
+        font-size: 11.5px;
+    }
+    .logo{
+        margin-right: 12px;
+    }
     /*seção banner*/
 
     .banner h1{
