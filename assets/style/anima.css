@@ -29,7 +29,7 @@
     }
 }
 
-@keyframes açougue{
+@keyframes mercearia{
     25%{
         background-image: url('../img/pereciveis/banner-arroz.jpg');
     }
@@ -59,7 +59,7 @@
     }
 }
 
-@keyframes padaria{
+@keyframes açougue{
     25%{
         background-image: url('../img/dn_açougue.png');
     }
@@ -72,4 +72,20 @@
     100%{
         background-image: url('../img/img_mercado/linguiça.jpg');
     }
+}
+
+@keyframes banner_mob{
+    25%{
+        background-image: url('../img/dn_frutas_mb.png');
+    }
+    50%{
+        background-image: url('../img/dn_açougue_mb.png');
+    }
+    75%{
+        background-image: url('../img/dn_mercearia_mb.png');
+    }
+    100%{
+        background-image: url('../img/dn_capa_mb.png');
+    }
+
 }
