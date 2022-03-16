@@ -596,10 +596,6 @@ footer .inf_contact{
     }
 
     /*banner*/
-    .banner{
-        animation-name: banner_mob;
-        background-image: url('../img/dn_capa_mb.png');
-    }
     .banner h1{
         font-size: 30px;
         max-width: 375px;
