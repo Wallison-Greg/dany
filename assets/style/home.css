@@ -471,7 +471,7 @@ footer .inf_contact{
     margin-top: 15px;
 }
 .day_sem .day{
-    min-width: 33.5px;
+    min-width: 40.5px;
     margin-left: 10px;
 }
 .day_sem .hr{
@@ -496,12 +496,12 @@ footer .inf_contact{
     flex-direction: row;
 }
 .horario .cont_day{
-    border-right: 1px solid #7c7c7c;
+    border-left: 1px solid #7c7c7c;
     margin-right: 5px;
     margin-bottom: 15px;
 }
-.horario .cont_day:last-child{
-    border-right: none;
+.horario .cont_day:first-child{
+    border-left: none;
 }
 .cont_day .day_sem:first-child{
     margin-top: 0;
